@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>3 Box Grid</title>
+        <style type = "text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Yeseva+One&display=swap');
+
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+
+            body {
+                font-size: 1.6rem;
+                font-family: 'Noto-Sans', sans-serif;
+            }
+
+            h3 {
+                font-family: 'Teseva One', serif;
+                font-size: 4rem;
+            }
+
+            .container {
+                border: 1px solid black;
+                width: 100%;
+                padding: 30px;
+                background: lightyellow;
+                margin: 50px auto;
+            }
+
+            .grid-3 {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                justify-content: center;
+                align-items: flex-start;
+                height: 100%;
+                text-align: center;
+            }
+
+            .grid-3 .title {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            .grid-3 .text {
+                font-size: 1.6rem;
+                font-weight: normal;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "grid-3">
+                <div>
+                    <h3>111</h3>
+                    <p class = "title">People</p>
+                    <p class = "text">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Asperiores, aliquam.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>222</h3>
+                    <p class = "title">Places</p>
+                    <p class = "text">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Asperiores, aliquam.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>333</h3>
+                    <p class = "title">Things</p>
+                    <p class = "text">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Asperiores, aliquam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
