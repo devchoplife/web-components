@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>NAVIGATION BAR</title>
+        <style type = text/css>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Yeseva+One&display=swap');
+
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+
+            a {
+                color: #E5E5E5;
+                text-decoration: none;
+            }
+
+            nav {
+                font-size: 1.8rem;
+                font-family: "Open Sans Condensed", sans-serif;
+                color: #E5E5E5;
+                background: lightgray;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-transform: uppercase;
+                flex-wrap: wrap;
+                top: 0;
+                background: rgba(40, 89, 67, 1);
+                padding: 1rem 2rem;
+            }
+
+            nav > * {
+                padding: 1rem;
+            }
+
+            .nav-links {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2rem;
+            }
+
+            .nav-links ul {
+                list-style: none;
+            }
+
+            .nav-links li {
+                display: inline-block;
+            }
+
+            .lookslikeabutton {
+                display: inline-block;
+                padding: 0.8rem 3rem;
+                background: rgba(20, 40, 20, 1);
+                border-radius: 5px;
+            }
+
+            @media (max-width: 800px) {
+                nav {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+    <nav>
+        <h1><a href = "#">Navigation Bar</a></h1>
+
+        <ul class = 'nav-links'>
+            <li><a href = "#">CellOne</a></li>
+            <li><a href = "#">CellTwo</a></li>
+            <li><a href = "#">CellThree</a></li>
+            <li><a href = "#">CellFour</a></li>
+        </ul>
+
+        <span class = "lookslikeabutton"><a href = "#">CTA Button</a></span>
+    </nav>
+
+    <body>
+        
+    </body>
+</html>
