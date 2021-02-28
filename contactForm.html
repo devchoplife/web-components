@@ -6,7 +6,109 @@
 
         <title></title>
         <style type = text/css>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Yeseva+One&display=swap');
 
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+
+            body {
+                font-size: 1.6rem;
+                font-family: "Noto Sans", sans-serif;
+            }
+
+            h2 {
+                font-family:"Yeseva One", serif;
+                font-size: 5rem;
+            }
+
+            input {
+                width: 100%;
+                height: 2rem;
+                border: 1px solid black;
+                border-radius: 3px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 150px;
+                border: 1px solid black;
+                border-radius: 3px;
+            }
+
+            .container {
+                border: 1px solid black;
+                width: 60%;
+                padding: 30px;
+                background: lightgray;
+                margin: 50px auto;
+            }
+
+            .flex-2 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 20px 0;
+                gap: 20px;
+            }
+
+            .flex-2-box {
+                min-width: 250px;
+                width: 300px;
+            }
+
+            .form-contact-details {
+                list-style: none;
+            }
+
+            .form-contact-details li {
+                padding: 10px 0;
+            }
+
+            form p {
+                padding-bottom: 10px;
+            }
+
+            .form-submit {
+                display: inline-block;
+                border: 1px solid lack;
+                padding: 0.5rem 2rem;
+                margin: 0;
+                text-decoration: none;
+                background: #F1F1F1;
+                color: #161F2A;
+                font-family: "Noto Sans", sans-serif;
+                font-size: 1.6rem;
+                cursor: pointer;
+                text-align: center;
+                width: 100%;
+                transition: background 250ms ease-in-out,
+                            transform 150ms ease;
+                -webkit-appearnace: none;
+                -moz-appearance: none;
+            }
+
+            button:hover,
+            button:focus {
+                background: #161F2A;
+                color: #F1F1F1;
+            }
+
+            button:focus {
+                outline: 1px solid #F1F1F1;
+                outline-offset: -4px;
+            }
+
+            button:active {
+                transform: scale(0.99);
+            }
         </style>
     </head>
 
@@ -70,7 +172,7 @@
 
                 <div class = "flex-2-box details">
                     <h3>Other ways to contact us</h3>
-                    <ul>
+                    <ul class = "form-contact-details">
                         <li>Phone: 0903 256 8389</li>
                         <li>Email: dee@gmail,com</li>
                         <li>
