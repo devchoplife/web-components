@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Contact Form with JavaScript</title>
+        <style type = text/css>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Noto Sans", sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+
+            button, input[type = "submit"] {
+                border: 0;
+                border-radius: 5px;
+                color: #000;
+                cursor: pointer;
+                padding: 8px 12px;
+            }
+
+            .modal-container {
+                background: rgba(0,0,0,0.6);
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            .modal-container .show-modal {
+                display: block;
+            }
+
+            .modal {
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 100%;
+                width: 400px;
+                animation-name: openModal;
+                animation-duration: 1s;
+            }
+
+            .modal-header {
+                padding: 15px;
+            }
+
+            .modal-header h3 {
+                margin: 0;
+                padding-bottom: 5px;
+                border-bottom: 1px solid black;
+            }
+
+            .modal-content {
+                padding: 20px;
+            }
+
+            .modal-form div {
+                margin: 15px 0;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <button id = "open">Contact Us Today!!!</button>
+
+        <div class = "modal-container" id = "modal">
+            <div class = "modal">
+                <button class = "close-btn" id = "close">
+                    <i class = "fa fa-times"></i>
+                </button>
+                <div class = "modal-header">
+                    <h3>Contact Us</h3>
+                </div>
+
+                <div class = "modal-content">
+                    <p>
+                        Please fill out the form below and we will keep in touch
+                    </p>
+
+                    <form name = "contact" method = "POST" data-netlify = "true" class = "modal-form">
+                        <div>
+                            <label>Name:</label>
+                            <input type = "text" name = "name" class = "form-input">
+                        </div>
+
+                        <div>
+                            <label>Email:</label>
+                            <input type = "email" name = "email" class = "form-input">
+                        </div>
+
+                        <div>
+                            <label>Phone:</label>
+                            <input type = "text" name = "phone" class = "form-input">
+                        </div>
+
+                        <div>
+                            <label>Zip Code:</label>
+                            <input type = "number" name = "zip" class = "form-input">
+                        </div>
+
+                        <div>
+                            <label>Tell Us about your Project:</label>
+                            <textarea name = "message" class = "form-input"></textarea>
+                        </div>
+
+                        <div>
+                            <button type = "submit" value = "submit" class = "form-submit">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
